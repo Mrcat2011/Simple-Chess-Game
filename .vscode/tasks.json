@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build Raylib app",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "src/main.cpp",
+                "-o",
+                "raylib_example",
+                "-lraylib",
+                "-lGL",
+                "-lm",
+                "-lpthread",
+                "-ldl",
+                "-lrt"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Build Raylib application"
+        }
+    ]
+}
